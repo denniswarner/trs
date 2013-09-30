@@ -1,0 +1,288 @@
+body{
+	margin:0px;
+	background-image: url(../images/bg.jpg);
+	background-repeat: repeat;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #292627;
+}
+
+.container {
+	width: 908px; height: auto}
+
+
+.header{width:908px; height:241px; float:left}
+.phone{width:888px; height:28px; float:left; font-size:18px; text-align:left; padding-left:20px; padding-top:12px; background-color:#ffffff}
+
+
+.nav{width:908px; height:34px; float:left; background-color:#ffffff}
+
+#but1{
+	width:107px;
+	height:34px;
+	float:left;
+	margin-left:4px;
+	background-image: url(../images/but_07.jpg);
+	background-position: top;
+}
+
+#but1_current{
+	width:107px;
+	height:34px;
+	float:left;
+	margin-left:4px;
+	background-image: url(../images/but_07.jpg);
+	background-position: bottom;
+}
+#but2{
+	width:135px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_08.jpg);
+	background-position: top;
+}
+
+#but2_current{
+	width:135px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_08.jpg);
+	background-position: bottom;
+}
+
+#but3{
+	width:175px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_09.jpg);
+	background-position: top;
+}
+
+#but3_current{
+	width:175px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_09.jpg);
+	background-position: bottom;
+}
+
+#but4{
+	width:144px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_10.jpg);
+	background-position: top;
+}
+
+#but4_current{
+	width:144px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_10.jpg);
+	background-position: bottom;
+}
+#but5{
+	width:166px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_11.jpg);
+	background-position: top;
+}
+
+#but5_current{
+	width:166px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_11.jpg);
+	background-position: bottom;
+}
+#but6{
+	width:125px;
+	height:34px;
+	float:left;
+	
+	background-image: url(../images/but_13.jpg);
+	background-position: top;
+}
+
+#but6_current{
+	width:125px;
+	height:34px;
+	float:left;
+	background-image: url(../images/but_13.jpg);
+	background-position: bottom;
+}
+a#but1:hover,a#but2:hover,a#but3:hover,a#but4:hover,a#but5:hover,a#but6:hover{background-position:bottom}
+
+.nav_space{
+	width:48px;
+	height:34px;
+	float:left;
+	background-image: url(../images/navspace.jpg);
+}
+
+.search_bg{
+	width:908px;
+	height:51px;
+	float:left;
+
+	background-color: #ffffff;
+}
+
+.search_part{
+	width:900px;
+	height:45px;
+	float:left;
+	margin-left:4px;
+	margin-top:4px;
+	background-image: url(../images/serchbg.jpg);
+	background-repeat: repeat-x;
+	
+}
+
+
+.search_txt{width:280px; height:32px; float:left; margin-top:5px; margin-left:10px; background-color:#ffffff; border:none; }
+
+.search_but{width:97px; height:32px; float:left; margin-top:6px; margin-left:4px;}
+
+.body_parts{width:882px; height:auto; float:left; background-color:#ffffff; padding:13px;}
+
+
+.column_left{width:235px; height:auto; float:left;}
+.column_rt{width:630px; height:auto; margin-left:15px; float:left}
+
+.col_head{
+	width:208px;
+	height:24px;
+	float:left;
+	text-align:left;
+	padding-left:27px;
+	padding-top:11px;
+	color:#ffffff;
+	text-transform:uppercase;
+	background-image: url(../images/col_head.jpg);
+}
+
+.cat{width:213px; height:auto; float:left; background-color:#E6E6E6; padding:11px; }
+
+.cat ul {
+	list-style:none;
+	width:190px;
+	text-align:left; font-size:11px;
+	padding-left:0px; margin:0px; text-transform:uppercase; float:left
+	
+}
+.cat ul li{width:182px; background-image: url(../images/arr.png);
+	background-repeat: no-repeat;
+	background-position: left top; padding-left:28px; float:left;margin-bottom:3px;}
+	
+.cat li a {text-decoration:none; color:#292627; float:left; padding-bottom:0px; padding-top:0px;width:182px; float:left}
+	
+	
+.cat ul li a:hover{text-decoration:none;color:#F57EC2; float:left; width:192px;}
+
+
+.cat2{width:213px; height:auto; float:left; background-color:#E6E6E6; padding-top:5px;padding-left:11px; padding-bottom:5px; padding-right:11px; }
+
+.cat2 ul {
+	list-style:none;
+	width:190px;
+	text-align:left; font-size:11px;
+	padding-left:0px; margin:0px; text-transform:uppercase; float:left
+	
+}
+.cat2 ul li{width:182px; background-image: url(../images/arr_pink.png);
+	background-repeat: no-repeat;
+	background-position: left top; padding-left:28px; float:left;margin-bottom:0px;}
+	
+.cat2 li a {text-decoration:none; color:#292627; float:left; padding-bottom:0px; padding-top:0px;width:182px; float:left}
+	
+	
+.cat2 ul li a:hover{text-decoration:none;color:#F57EC2; float:left; width:192px;}
+
+.banner{
+	width:630px;
+	height:310px;
+	float:left;
+	background-image: url(../images/banner.jpg);
+}
+
+.featured_head{
+	width:630px;
+	height:40px;
+	float:left;
+	margin-top:11px;
+	background-image: url(../images/featured_head.jpg);
+}
+
+.featured_imgs{width:630px; height:174px; float:left; margin-top:10px;}
+.featured_img{width:151px; height:174px; margin-right:8px; float:left}
+.featured_img_last{width:151px; height:174px; float:left }
+
+.bridal_shower_head{
+	width:630px;
+	height:37px;
+	float:left;
+	background-image: url(../images/bridal_shower_head.jpg);
+}
+.baby_shower_head{
+	width:630px;
+	height:37px;
+	float:left;
+	background-image: url(../images/baby_shower_head.jpg);
+}
+.baby_shower_head1{
+	width:630px;
+	height:37px;
+	float:left;
+	background-image: url(../images/baby_gits_acc.jpg);
+}
+.footer{
+	width:881px;
+	height:40px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #8A8A8A;  padding-top:16px; float:left; margin-top:10px;
+}
+
+.footer_bottom{
+	width:881px;
+	height:auto;
+	float:left;
+	margin-top:10px;
+}
+
+.footer_bottom_left{
+float:left;
+}
+
+.footer_bottom_right{
+padding-left:160px;
+float:left;
+
+}
+
+.footer_left{width:440px; height:atuo; float:left; text-align:left; font-size:11px; color:#4B4B4B}
+
+.footer_right{width:410px; float:left; height:auto; text-align:right}
+
+.footer a, .footer_bottom a{color:#EA008B; text-decoration:none}
+.footer a:visited, .footer_bottom a:visited{color:#EA008B; text-decoration:none}
+.footer a:hover, .footer_bottom a:hover{color:#4B4B4B; text-decoration:none}
+
+a.bot:link{color:#4B4B4B; text-decoration:none}
+a.bot:visited{color:#4B4B4B; text-decoration:none}
+a.bot:hover{color:#EA008B; text-decoration:none}
+
+td a{color: #292627; text-decoration:none}
+td a:visited{color: #292627; text-decoration:none}
+td a:hover{color: #F57Ec2; text-decoration:none}
+
+.f_icon{width:30px; height:30px; float:left}
+
+#captions{ font-size:24px; color:#000000; height:23px; width:320px; float:left; margin-left:100px;; text-align:left}
+
+
+.home_banner1{width:300px; height:310px; float:left; border:solid 2px #F67FC3}
+.home_banner2{width:300px; height:310px; float:left; border:solid 2px #F67FC3; margin-left:10px;}

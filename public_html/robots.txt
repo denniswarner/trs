@@ -1,0 +1,25 @@
+User-agent: *
+Disallow: /CSSMenuWriter/
+Disallow: /SpryAssets/
+Disallow: /Templates/
+Disallow: /WA_ValidationToolkit/
+Disallow: /_dev/
+Disallow: /_fancybox/
+Disallow: /_oldfiles/
+Disallow: /_testing/
+Disallow: /_v1.3/
+Disallow: /_versioning/
+Disallow: /cache/
+Disallow: /cgi/
+Disallow: /cgi-bin/
+Disallow: /css/
+Disallow: /dswarner/
+Disallow: /fancybox/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /siteassistpro_css/
+Disallow: /siteassistpro_images/
+Disallow: /stats/
+Disallow: /temp/
+Disallow: /testing/
+

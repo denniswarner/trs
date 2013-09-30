@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+body #home {
+  background-image: url("../images/siteassistpro_images/body_bg.jpg");
+  background-repeat: repeat-x;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: left;
+}
+body {
+  background-image: url("../images/siteassistpro_images/sub_body_background.jpg");
+  background-repeat: repeat-x;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: left;
+}
+h1 {
+	color: #f47820;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 24px;
+	text-align: left;
+}
+h2 {
+	color: #024F2D;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: normal;
+	text-align: left;
+}
+h3 {
+	color: #f47820;
+	font-size: 14px;
+	text-align: left;
+}
+h4 {
+  color: #f47820;
+}
+h5 {
+  color: #f47820;
+}
+h6 {
+  color: #f47820;
+}
+a,  a:link {
+  color: #00C32F;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:visited {
+	color: #578557;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a:hover {
+  color: #017a20;
+  text-decoration: underline;
+}
+a:focus {
+  color: #017a20;
+}
+a:active {
+  color: #004e2a;
+}
+#outerWrapper {
+  	margin: 0 auto 0 auto;
+  	text-align: left;
+  	width: 761px;
+	padding-bottom: 150px;
+}
+#outerWrapper #header {
+	font-size: 18px;
+	font-weight: bold;
+	height: 90px;
+	line-height: 15px;
+	/*padding: 20px 0px 0px 20px;*/
+	text-align: left;
+
+}
+#outerWrapper #slideshow {
+	height: 275px;
+	padding: 0 0 20px 0;
+}
+#outerWrapper #topNavigation-home {
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 31px;
+	margin-top: 15px 0 15px 0;
+	/*padding: 10px 5px 0px 5px;*/
+}
+#outerWrapper #contentWrapper {
+	background-image: url("../images/siteassistpro_images/contentWrapper_bg.jpg");
+  	background-repeat: repeat-y;
+	height: 1%;
+	min-height: 0;
+	overflow: hidden;
+}
+#outerWrapper #contentWrapper #leftColumn1 {
+	float: right;
+	/*padding: 10px 20px 50px 20px;*/
+	padding: 10px 10px 50px 10px;
+	width: 190px;
+	height: 400px;
+}
+#outerWrapper #contentWrapper #content-home {
+	margin: 0 210px 0 0;
+	padding: 10px 20px 10px 15px;
+	text-align: left;
+}
+#outerWrapper #footer {
+  color: #017a20;
+  padding: 10px 0px 10px 0px;
+}
+
+
+#list_left {
+  float:left;
+  padding-left:20px;
+  width:200px;
+}
+
+#list_right {
+  float:left;
+  width:48%;
+}
+.list_text {
+  color:#55311E;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:small;
+  list-style-position:inside;
+  list-style-type:disc;
+}
+
+/*****BEGIN PRODUCR DETAILS*****/
+#product-details {
+	width: 500px;
+}
+
+#product-grouping {
+	width: 160px;
+	float: left;
+}
+
+#product-img {
+	width: 140px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#product-link {
+	float: left;
+	width: 160px;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+#product-description {
+	float: right;
+	width: 340px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+/*****END PRODUCR DETAILS*****/
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { font-weight: bold; float: left; zoom: 1; background: #ccc; }
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; padding: 4px 8px; border-right: 1px solid #333;
+	 								  color: #222; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { background: #F3D673; color: black; position: relative; }
+ul.dropdown li.hover a              { color: black; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width: 220px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 					{ font-weight: normal; background: #f6f6f6; color: #000; 
+									  border-bottom: 1px solid #ccc; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+
+/*****BEGIN JQUERY NV MENU*****/
+/* remove the list style */
+	#nav {
+		margin:0; 
+		padding:0; 
+		list-style:none;
+	}	
+	
+		/* make the LI display inline */
+		/* it's position relative so that position absolute */
+		/* can be used in submenu */
+		#nav li {
+			float:left; 
+			display:block; 
+			width:100px; 
+			background:#ccc; 
+			position:relative;
+			z-index:500; 
+			margin:0 1px;
+			font-size:-1;
+		}
+		
+		/* this is the parent menu */
+		#nav li a {
+			display:block; 
+			padding:4px 5px 0 5px; 
+			font-weight:700;  
+			height:18px; 
+			text-decoration:none; 
+			color:#fff; 
+			text-align:left; 
+			color:#333;
+		}
+
+		#nav li a:hover {
+			color:#fff;
+		}
+	
+		/* you can make a different style for default selected value */
+		#nav a.selected {
+			color:#f00;
+		}
+	
+		/* submenu, it's hidden by default */
+		#nav ul {
+			position:absolute; 
+			left:0; 
+			display:none; 
+			margin:0 0 0 -1px; 
+			padding:0; 
+			list-style:none;
+		}
+		
+		#nav ul li {
+			width:180px; 
+			float:left; 
+			border-top:1px solid #fff;
+		}
+		
+		/* display block will make the link fill the whole area of LI */
+		#nav ul a {
+			display:block;  
+			height:15px;
+			padding: 8px 5px; 
+			color:#666;
+		}
+		
+		#nav ul a:hover {
+			text-decoration:underline;	
+		}
+
+		/* fix ie6 small issue */
+		/* we should always avoid using hack like this */
+		/* should put it into separate file : ) */
+		*html #nav ul {
+			margin:0 0 0 -2px;
+		}
+		/*****BEGIN JQUERY NV MENU*****/
+#footer { 
+    position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	background-color:#014e2a;
+	clear:both;
+	}
+#footer a:link { 
+	color: #FFF;
+  	font-weight: bold;
+  	text-decoration: underline;
+	}
+#address { 
+	padding: 20px 20px 0 40px;
+	color: #FFFFFF;
+	}
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

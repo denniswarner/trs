@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*****BEGIN PRODUCR DETAILS*****/
+#product-details {
+	width: 500px;
+}
+
+#product-grouping {
+	width: 180px;
+	height: 340px;
+	float: left;
+}
+
+#product-img {
+	width: 140px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#product-link {
+	float: left;
+	width: 180px;
+	text-align: center;
+	margin: 10px 0 20px;
+}
+#product-description {
+	float: right;
+	width: 500px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+#legal-notice {
+	background-color:#0C9
+}
+/*****END PRODUCR DETAILS*****/

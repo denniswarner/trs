@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/trs-main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Open Space</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../../../../css/style-trs.css" />
+<link rel="stylesheet" type="text/css" href="../../../../css/modal/component.css">
+<link rel="stylesheet" type="text/css" href="../../../../css/modal/default.css">
+<style type="text/css" media="all"></style>
+<style type="text/css" media="print">
+<!--
+@import url("../../../../siteassistpro_css/content_print.css");
+-->
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<!-------------------- TESTING -------------------->
+<!---------- BEGIN SHOW MORE IMPORT---------->
+<!--<link rel="stylesheet" type="text/css" href="../css/hidemoreless.css" />-->
+<!---------- END SHOW MORE IMPORT---------->
+
+<!---------- BEGIN HIDE MORE lESS IMPORT---------->
+<!--<script type="text/javascript" src="../js/hidemoreless.js"></script>-->
+<!---------- BEGIN HIDE MORE lESS IMPORT---------->
+<!-------------------- TESTING -------------------->
+
+
+
+<!---------- BEGIN HINT CSS IMPORT---------->
+<link rel="stylesheet" href="../../../../css/hint.min.css">
+<!---------- END HINT CSS IMPORT---------->
+
+
+<!--[if IE 5]>
+<style type="text/css"> 
+#outerWrapper #contentWrapper #leftColumn1 {
+  width: 190px;
+}
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+#outerWrapper #contentWrapper, #outerWrapper #contentWrapper #content {
+  zoom: 1;
+}
+</style>
+<![endif]-->
+<style type="text/css" media="all">
+<!--
+<!--@import url("../../../../CSSMenuWriter/cssmw_content/menu.css");-->
+-->
+</style>
+<!-- InstanceBeginEditable name="menu_ie" -->
+<!--[if lte IE 6]>
+<style type="text/css" media="all">
+@import url("../CSSMenuWriter/cssmw_content/menu_ie.css");
+</style>
+<![endif]-->
+<!-- InstanceEndEditable -->
+<script type="text/javascript" src="../../../../CSSMenuWriter/cssmw_content/menu.js"></script>
+<style type="text/css" media="all">
+<!--
+@import url("../../../../siteassistpro_css/mystyles.css");
+-->
+</style>
+<!----------BEGIN TYPEKIT---------->
+<script type="text/javascript" src="//use.typekit.net/zqv6yre.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!----------END TYPEKIT---------->
+<!----------BEGIN JQUERY FANCYBOX---------->
+<!-- Begin Add jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="file:///Drobo/_PROJECTS/Tony%20Pribila/www.therapeuticrehabspecialists.com/Website/_current%20v1.4/css/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+<script type="text/javascript" src="file:///Drobo/_PROJECTS/Tony%20Pribila/www.therapeuticrehabspecialists.com/Website/_current%20v1.4/js/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+<!----------END JQUERY FANCYBOX---------->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<!----------BEGIN GOOGLE ANALYTICS---------->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34177458-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!----------END GOOGLE ANALYTICS---------->
+<script language="JavaScript">
+function breadCrumbs(base,delStr,defp,cStyle,tStyle,dStyle,nl) { // by Paul Davis - http://www.kaosweaver.com
+loc=window.location.toString();subs=loc.substr(loc.indexOf(base)+base.length+1).split("/");
+ document.write('<a href="'+getLoc(subs.length-1)+defp+'" class="'+cStyle+'">Home</a>  '+'<span class="'+dStyle+'">'+delStr+'</span> ');
+ a=(loc.indexOf(defp)==-1)?1:2;for (i=0;i<(subs.length-a);i++) { subs[i]=makeCaps(unescape(subs[i]));
+ document.write('<a href="'+getLoc(subs.length-i-2)+defp+'" class="'+cStyle+'">'+subs[i]+'</a>  '+'<span class="'+dStyle+'">'+delStr+'</span> ');}
+ if (nl==1) document.write("<br>");document.write('<span class="'+tStyle+'">'+document.title+'</span>');
+}
+function makeCaps(a) {
+  g=a.split(' ');for (l=0;l<g.length;l++) g[l]=g[l].toUpperCase().slice(0,1)+g[l].slice(1);
+  return g.join(" ");
+}
+function getLoc(c) {
+  var d="";if (c>0) for (k=0;k<c;k++) d=d+"../"; return d;
+}
+</script>
+</head>
+
+<body>
+
+<div id="pagewrap">
+  <div id="header"><a href="../../../../index.html"><img src="../../../../images/_not%20used/header-trs.jpg" alt="" width="760" height="80" /></a></div>
+  <div id="nav-site"><!-- #BeginLibraryItem "/Library/mainMenu-v02.lbi" -->
+<ul class="level-0" id="cssmw_content">
+		<li><a href="../../../../index.html">Home</a></li>
+        <li><a href="../../../../about/ourpractice.html">Our Practice</a></li>
+	<li class="parent"><a href="../../../index.html">Services</a>
+		<ul class="level-1">
+          <li><a href="../../../physical-therapy.html">Physical Therapy</a></li>
+          <li><a href="../../../manual-therapy.html">Manual Therapy</a></li>
+          <li><a href="../../../sports-medicine.html">Sports Medicine</a></li>
+          <li><a href="../../../physical-performance-evaluations.html">Physical Perf.<br>
+          Evaluation</a></li>
+          <li><a href="../../../home-care.html">Home Care<br>
+          Therapy</a></li>
+          <li><a href="../../../ergonomic-job-site-analysis.html">Ergonomic Job <br>
+            Site Analysis</a></li>
+          <li><a href="../../../work-conditioning.html">Work <br> Conditioning</a></li>
+          <li><a href="../../../functional-capacity-evaluations.html">Funct. Capacity<br>
+            Evaluations</a></li>
+          <li><a href="../../../pre-post-offer.html">Pre/Post Offer<br>
+          Assessment</a></li>
+          <li><a href="../../../back-school.html">Back School</a></li>
+          <li><a href="../index.html">Blood Testing</a></li>
+          <li><a href="../../hormone-testing/index.html">Hormone Testing</a></li>
+          <li><a href="../../../orthotics.html">Orthotics</a></li>
+          <li><a href="../../../pool-therapy.html">Pool Therapy</a></li>
+        </ul>
+</li>
+<li class="parent"><a href="../../../../products/index.html">Products</a>
+      <ul class="level-1">
+        <li><a href="../../../../products/supplements/index.html">Nutritional<br>
+        Supplements</a></li>
+        <li><a href="../../../orthotics.html">Orthotics</a></li>
+      </ul>
+      <li><a href="../../../../research/headache-study.html">Headache Research</a></li>
+      <li><a href="../../../../about/referTRS.html">Refer to TRS</a></li>
+      <li class="parent"><a href="../../../../resources/index.html">Resources</a>
+        <ul class="level-1">
+          <li><a href="../../../../resources/client-education.html">Client Education</a></li>
+          <li><a href="../../../../forms/form-client-satisfaction.html">Survey</a></li>
+          <li><a href="../../../../resources/frequently-asked-questions.html">FAQs</a></li>
+          <li><a href="../../../../pdf/TRS%20New%20pt.%20registration%20forms%20Website.pdf">Patient Reg.<br>
+          Forms</a></li>
+          <li><a href="../../../../resources/insurance-list.html">Insurance List</a></li>
+          <li><a href="../../../../resources/links.html">Links</a></li>
+          <li><a href="../../../../resources/employment-opportunities.html">Employment<br>
+          Opportunities</a></li>
+        </ul>
+</li>
+      <li class="parent"><a href="../../../../contact/index.html">Contact</a>
+        <ul class="level-1">
+          <li><a href="../../../../contact/hillsboroughcounty.html">Brandon<br>
+          Physical Therapy<br>
+          Office</a></li>
+          <li><a href="../../../../contact/pinellascounty.html">Pinellas Park<br>
+          Physical Therapy<br>
+          Office</a></li>
+          <li><a href="../../../../contact/polkcounty.html">Lakeland<br>
+          Physical Therapy<br>
+          Office</a></li>
+        </ul>
+      </li>
+    </ul><!-- #EndLibraryItem --><script type="text/javascript">if(window.attachEvent) { window.attachEvent("onload", function() { cssmw_content.intializeMenu('cssmw_content',{select_current: 0, orientation: 1}); }); } else if(window.addEventListener) { window.addEventListener("load", function() { cssmw_content.intializeMenu('cssmw_content',{select_current: 0, orientation: 1}); }, true); }</script></div>
+  	<div id="main"><!-- InstanceBeginEditable name="content" -->
+    <h3 align="left"><a href="http://www.spectracell.com" title="SpectraCell Home" target="_blank"><img border="0" width="413" height="55" src="../../../../images/logos/logo-spectracell.jpg" alt="Spectracell Laboratories" /></a></h3>
+    <h3 align="left"><br />
+      Exclusively at: Therapeutic Rehab Specialists Brandon &amp; Lakeland offices</h3>
+	<br /><br />
+    <h1 align="left">CARDIOVASCULAR TESTING<br />
+      <br />
+    </h1>
+    <p align="center"><img src="../../../../images/clip_image010_0000.jpg" alt="LPP Logo - Product Specifications" width="124" height="38" border="0" align="left" /></p>
+    <p>&nbsp;</p>
+    <p>Spectracell’s LPP™ test is the most advanced lipoprotein test currently available. Unlike traditional cholesterol tests, Spectracell’s LPP™ directly measures the number of lipoprotein particles in all of the subgroups of LDL and HDL including Lp(a) and other critical risk factors as cited by the National Cholesterol Education Program, giving the most comprehensive and accurate assessment of cardiovascular risk for better determination of treatment guidance.</p>
+    <h6>&nbsp;</h6>
+    <h3 align="left">Do Cholesterol Numbers Really Assess Cardiovascular Risk?</h3>
+    <p align="left"><u><strong>Lipoprotein Particle Numbers Tell the Story</strong></u><br />
+      LPP™ Testing is essential to identifying at-risk patients<br />
+      Up to 50 percent of those who have suffered heart attacks had “normal” cholesterol numbers. How can the large discrepancy between accurate diagnosis and standard cholesterol testing be prevented? Simply by testing the LDL (low density lipoprotein) particle numbers using the Lipoprotein Particle Profile™ (LPP™) from SpectraCell Laboratories.<br />
+  </p>
+    <p align="left"><strong>Overview of lipoprotein particles and cholesterol</strong><br />
+      Cholesterol testing has historically been used as the standard indicator for cardiovascular disease classified as HDL (good) or LDL (bad). However, it is actually the lipoprotein particles that carry the cholesterol throughout the body, not necessarily the cholesterol within them, that are responsible for key steps in plaque production and the resulting development of cardiovascular disease.</p>
+    <p align="center"><img border="0" width="337" height="119" src="../../../../images/clip_image012_0000.jpg" alt="Measuring cholesterol alone does not provide the complete picture and can be misleading." />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+    <p align="left">Approximately 50 percent of people suffering from heart attacks have shown “normal” cholesterol numbers (NHLBI – The National Heart, Lung, and Blood Institute).<br />
+      <br />
+      Now there is an advanced cholesterol testing technology which accurately measures both the density and number of lipoprotein particles. This test is the Lipoprotein Particle Profile™, or LPP™, from SpectraCell Laboratories.<br />
+      <br />
+      Measuring the lipoprotein subgroups is the only way to evaluate new risk factors, which is crucial for an accurate assessment of cardiovascular risk – according to the National Cholesterol Education Program (NCEP).<br />
+      NCEP new Risk Factors:</p>
+    <ul>
+      <li>Small, dense LDL: these      atherogenic particles are easily oxidized and penetrate the arterial      endothelium to form plaque</li>
+      <li>Lp(a): this small, dense LDL is      involved in thrombosis</li>
+      <li><strong>RLP (Remnant Lipoprotein)</strong>: is very atherogenic, has a similar      composition and density of plaque, is believed to be a building block of      plaque and does not need to be oxidized like other LDL particle</li>
+      <li>HDL2b: positively correlates with      heart health because it is an indicator of how well excess lipids are      removed</li>
+    </ul>
+    <h3><strong><br />
+      Why is it important to know lipoprotein numbers?</strong><br />
+    </h3>
+    <p>Cardiovascular risk increases with a higher LDL particle count. With a higher non-HDL lipoprotein count the probability of particle penetration of the arterial wall rises, regardless of the total amount of cholesterol contained in each particle. On average, the typical particle contains 50 percent cholesterol.<br />
+      <br />
+      More than 30 percent of the population has cholesterol-depleted LDL, a condition in which a patient’s cholesterol may be “normal” but their lipoprotein particle number, and hence their actual risk, could be much higher than expected. This is especially common in persons whose triglycerides are high or HDL is low. In the population with a cholesterol-depleted LDL, there can be up to a 40 percent error in <br />
+      risk assessment.</p>
+    <p><a name="risk" id="risk"></a><img border="0" width="394" height="64" src="../../../../images/clip_image014_0000.jpg" alt="The LPP™ test from SpectraCell Laboratories provides physicians with the actual LDL par ticle count, allowing healthcare providers to accurately determine and diagnose cardiovascular risk in their practice." /></p>
+    <p><img border="0" width="394" height="270" src="../../../../images/clip_image016_0000.jpg" alt="The size/density and number particles determines your risk" /></p>
+    <p><strong>Lipoprotein Particle Profile™ (LPP™)</strong><br />
+      Providing a Complete Look at Lipoprotein Subgroups<br />
+      SpectraCell’s LPP™ test is a proprietary technology originally developed at Texas A&amp;M University that separates the lipoproteins in blood serum by density using analytical ultracentrifugation, the CDC gold standard for lipoprotein testing, then measures the particles photometrically.</p>
+    <p><img border="0" width="394" height="56" src="../../../../images/clip_image018.jpg" alt="High numbers of small dense LDL par ticles could ultimately cause cardiovascular disease." /><br />
+  &nbsp;&nbsp;</p>
+    <p>LPP™ is used to determine accurate atherogenic risk assessments<br />
+      Traditionally, the standard lipid panel calculates LDL from measurements of the other lipoproteins. In contrast, the LPP™ method presents values for all of the lipoproteins from direct measurement. SpectraCell’s LPP™ technology aids the physician in assessing a patient’s cardiovascular risk. With LPP™, a physician can begin to treat patients with atherogenic lipoprotein profiles before overt dyslipidemia becomes apparent.<br />
+  <img border="0" width="406" height="206" src="../../../../images/clip_image020.jpg" alt="LPP Sample Report Graph" /></p>
+    <h2>References &amp; Resources</h2>
+    <ol>
+      <li>Chandra R, Macfarlane R.      Remnant Lipoprotein Density Profiling by CsBiEDTA Density Gradient      Ultracentrifugation. Analytical Chemistry. 2006;78:680-685</li>
+      <li>Espinosa L, Macfarlane R,      McNeal C. Method for Lipoprotein(a) Density Profiling by BiEDTA      Differential Density Lipoprotein Ultracentrifugation. Analytical      Chemistry. 2006; 78:438-444</li>
+      <li>Nakajima K, Nakano T, Tanaka      A. The oxidative modification hypothesis of atherosclerosis: the      comparison of atherogenic effects on oxidized LDL and remant lipoproteins      in plasma. Clin Chim Acta. 2006;367(1-2):36-47. <br />
+        Packard CJ. Small dense low-density lipoprotein and its role as an      independent predictor of cardiovascular disease. Curr Opin Lipidol.      2006;17(4):412-7</li>
+      <li>Watanabe H, et al. Decreased      high-density lipoprotein (HDL) particle size, prebeta-, and large HDL      subspecies concentration in Finnish low-HDL families: relationships with      intima-media thickness. Aterioscler Thromb Vasc Biol. 2006;26(4):897-902 </li>
+      <li>Bell N, Johnson J, Donahoe E,      Macfarlane R. Metal Ion Complexes of EDTA as Solutes for Density Gradient      Ultracentrifugation: Influence of Metal Ions. Analytical Chemistry.      2005;77:8165-8172</li>
+      <li>Capuzzi D, Carey C, Lincoff      A, Morgan J. High-density Lipoprotein Subfractions and Risk of Coronary      Artery Disease. Current Atherosclerosis Reports. 2004;6:359-365</li>
+      <li>Marcovina SM, Koschinsky ML.      Evaluation of lipoprotein(a) as a prothrombotic factor: progress from      bench to bedside. Curr Opin Lipidol. 2003;14(4):361-6 </li>
+      <li>Otvos J. Why Cholesterol      Measurements May be Misleading about Lipoprotein Levels and Cardiovascular      Disease Risk – Clinical Implications of Lipoprotein Quantification Using      NMR Spectroscopy. J Lab Med. 2002;26(11/12):544-550</li>
+      <li>Cupples A, McNamara J,      Nakajima K, Ordovas J, Schaefer E, Shah P, Wilson P. Remnant-like particle      (RLP) cholesterol is an independent cardiovascular disease risk factor in      women: results from the Framingham Heart Study. Atherosclerosis.      2001;154(1):229-236</li>
+      <li>Handbook of Lipoprotein      Testing, 2nd Edition, American Association for Clinical Chemistry, Inc.,      Washington DC, 2000</li>
+      <li>Masuoka H, et al. Association      of Remnant-Like Particle Cholesterol with Coronary Artery Disease in      Patients with Normal Total Cholesterol Levels. Am Heart J.      2000;139(2):305-310</li>
+      <li>Seman L, et al.      Lipoprotein(a)-cholesterol and coronary heart disease in the Framingham      Heart Study. Clinical Chemistry. 1999;45:1039-1046</li>
+      <li>Cantin B, Dagenais G, Després      J, Lamarche B, Moorjani S, Lupien P. Associations of HDL2 and HDL3      subfractions with ischemic heart disease in men. Prospective results from      the Quebec Cardiovascular Study. Arterioscler Thromb Vasc Biol.      1997;17(6):1098-1105</li>
+      <li>Fortmann S, Gardner C, Krauss      R. Association of small low-density lipoprotein particles with the      incidence of coronary artery disease in men and women. JAMA. 1996;      276(11); pages 875-881</li>
+      <li>Dahlen G. Lp(a) lipoprotein      in cardiovascular disease. Atherosclerosis. 1994;108:111-126.</li>
+    </ol>
+    <!-- InstanceEndEditable --></div>
+	 <div id="sidebar"><div id="promosection"><a href="../../../../forms/receive-a-consulatation.html"><img src="../../../../images/promos/promo-180x90-receiveconsultation.jpg" alt="Receive a Consultation" width="170" height="85" /></a>
+     <br /><br />
+  <span align="center">"Hablamos espanol"</span></div></div>
+
+</div>
+<!--<div id="footer">
+    <table width="750" border="0" align="center">
+      <tr>
+        <td width="250" valign="top"><span style="color: #fff;"><strong>Lakeland Physical Therapy Office</strong></span><br />
+          <span style="color: #ffcd64;">1826 N. Crystal Lake Drive <br />
+            Lakeland, FL 33801<br />
+Phone: 813-876-8771<br />
+Fax: 813-333-5414</span></td>
+<td width="250" valign="top"><span style="color: #fff;"><strong>Pinellas Park Physical Therapy Office</strong></span><br />
+          <span style="color: #ffcd64;">6231 66th Street North<br />
+          Pinellas Park, FL 33781<br />
+          Phone:  727-470-6070<br />
+          Fax: 727-544-3221<br />
+          </span></td>
+        <td width="250" valign="top"><span style="color: #fff;"><strong>Brandon Physical Therapy Office</strong></span><br />
+<span style="color: #ffcd64;">1129 Professional Park Drive <br />
+        Brandon, FL 33511<br />
+        Phone: 813-876-8771<br />
+        Fax: 813-333-5414</span></td>
+      </tr>
+    </table>
+</div>-->
+</body>
+
+<!-- InstanceEnd --></html>

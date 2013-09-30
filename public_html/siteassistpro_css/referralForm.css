@@ -1,0 +1,110 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+body {
+	background-image: url(../images/siteassistpro_images/body_bg.jpg);
+	background-repeat: repeat-x;
+	color: #009;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align: center;
+	background-color: #999;
+}
+h1 {
+	color: #f47820;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: normal;
+}
+h2 {
+	color: #014E2A;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: normal;
+}
+h3 {
+  color: #f47820;
+}
+h4 {
+  color: #f47820;
+}
+h5 {
+  color: #f47820;
+}
+h6 {
+  color: #f47820;
+}
+
+a,  a:link {
+  color: #017a20;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:visited {
+  color: #578557;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #017a20;
+  text-decoration: underline;
+}
+a:focus {
+  color: #017a20;
+}
+a:active {
+  color: #004e2a;
+}
+#outerWrapper {
+  margin: 0 auto 0 auto;
+  text-align: left;
+  width: 761px;
+}
+#outerWrapper #header {
+	background-image: url("../images/_not used/header_bg.jpg");
+	background-repeat: no-repeat;
+	font-size: 18px;
+	font-weight: bold;
+	height: 380px;
+	line-height: 15px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#outerWrapper #topNavigation {
+	background-image: url("../images/siteassistpro_images/topNavigation_bg.jpg");
+	background-repeat: no-repeat;
+	border-bottom: solid 1px #666666;
+	color: #001808;
+	font-weight: bold;
+	height: 31px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+#outerWrapper #contentWrapper {
+	background-repeat: repeat-y;
+	height: 1%;
+	min-height: 0;
+	overflow: hidden;
+	background-color: #FFF;
+}
+#outerWrapper #contentWrapper #content {
+	padding: 10px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+#outerWrapper #footer {
+  color: #017a20;
+  padding: 10px 0px 10px 0px;
+}

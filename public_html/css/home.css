@@ -1,0 +1,17 @@
+#outerWrapper #slideshow {
+	height: 275px;
+	padding: 0 0 20px 0;
+}
+#outerWrapper #topNavigation-home {
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 22px;
+	padding: 5px 0 0 10px;
+	margin: 15px 0 10px 0;
+}
+
+#outerWrapper #contentWrapper #content-home {
+	margin: 0 210px 0 0;
+	padding: 10px 20px 10px 15px;
+	text-align: left;
+}
